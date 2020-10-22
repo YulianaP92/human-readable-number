@@ -43,6 +43,12 @@ module.exports = function toReadable(number) {
             if(m[1]==='0' && (m[2]==='0')){
                 
             }
+            else if((m[1]+m[2])>=10 && (m[1]+m[2])<=20){
+                numb+=" "+mas[m[1]+m[2]];
+            }
+            else if(m[1]==='0' && (m[2]!=='0')){
+                numb+=" "+mas[m[2]];
+            }
             else{
             let first = m[1] + 0;
 
